@@ -32,6 +32,47 @@
             height: 50px;
             height: 50px;
             object-fit: cover;
+            
         }
+    }
+}
+
+
+.main_section{
+    height: 87vh;
+    background-image: url('./Assets/section/Pizza.png');
+    background-position: contain;
+    background-size: 100% 100%;
+    padding: 1rem;
+}
+
+.main_text {
+    width: 40%;
+    color: white;
+    font-family: "Quattrocento", serif; 
+    margin-top: 5%;
+    margin-left: 3%;
+    >h1{
+        font-weight: 700;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 5%;
+        word-spacing: 4px;
+        letter-spacing: 6px;
+    }
+    >hr{
+        background-color: #F24C4C;
+        height: 11px;
+        border: none;
+        margin: 3rem;
+        width: 80%;
+    }
+    >p{
+        text-align: center;
+        line-height: 1.6;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 20px;
     }
 }
