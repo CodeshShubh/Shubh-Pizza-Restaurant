@@ -8,16 +8,13 @@
   box-sizing: border-box;
 }
 header {
-  /* position: relative; */
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
 }
+
 .navbar {
-  /* position: sticky;
-  top: 0;
-  z-index: 2000; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,11 +30,25 @@ header {
   }
 }
 
+.heading_logo{
+  display: flex;
+  margin-left: 1rem;
+  >img{
+     border-radius: 50%;
+     border: #000000;
+     overflow: hidden;
+  }
+}
+
 .nav_links > ul {
   display: flex;
   list-style: none;
   gap: 2rem;
   margin-bottom: 0;
+  >li>a{
+     text-decoration: none;
+     color: white;
+  }
 }
 
 .social_media_icons {
@@ -151,9 +162,6 @@ header {
   line-height: 2;
   font-weight: 400;
   font-size: 15px;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
   > hr {
     width: 70%;
     background-color: red;
@@ -189,18 +197,21 @@ header {
   justify-content: center;
 }
 .dish_card {
-  width: 40%;
+  width: 400px;
   display: flex;
   gap: 1.1rem;
-  > img {
-    width: 200px;
+
+  >.img_box{
+    width: 500px;
     height: 150px;
+    position: relative;  
+    
   }
+
   > .card_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 0.5rem; */
     > p {
       line-height: 1.3;
       word-spacing: 1px;
@@ -213,6 +224,17 @@ header {
   }
 }
 
+.img_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+.dish_card:hover .img_box img {
+  transform: scale(1.2); /* Zoom effect */
+}
+
 .carousel img {
   height: 400px;
   object-fit: cover;
@@ -223,12 +245,12 @@ header {
 }
 
 .carousel {
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
 .img_grid {
-  width: 90%;
+  width: 80%;
   margin: 20px auto 40px;
   display: grid;
   gap: 5px;

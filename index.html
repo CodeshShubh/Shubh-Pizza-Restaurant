@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shubh Pizza Restaurant</title>
+    <title>The BollyWood Cafe</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="shortcut icon"
-      href="./Assets/favicon/Shubh Pizza Resturent.webp"
+      href="./Assets/favicon/The-BollyWood-Cafe-fav.png"
       type="image/x-icon"
     />
     <link
@@ -24,15 +24,26 @@
   <body>
     <header>
       <nav class="navbar">
-        <h1>Shubh Pizza</h1>
+        <div class="heading_logo">
+          <h1>
+            The
+            <img
+              width="80px"
+              height="80px"
+              src="./Assets/favicon/The-BollyWood-Cafe.png"
+              alt="The-BollyWood-Cafe"
+            />
+            Cafe
+          </h1>
+        </div>
         <div class="nav_links">
           <ul>
-            <li>ABOUT US</li>
-            <li>MENU</li>
-            <li>BLOGS</li>
-            <li>TESTIMONY</li>
-            <li>FIND US</li>
-            <li>OUR TEAM</li>
+            <li><a href="#about_us">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#">BLOGS</a></li>
+            <li><a href="#">TESTIMONY</a></li>
+            <li><a href="#find_us">FIND US</a></li>
+            <li><a href="#">OUR TEAM</a></li>
           </ul>
         </div>
         <div class="social_media_icons">
@@ -64,7 +75,7 @@
     </section>
 
     <section class="bottom_section">
-      <div class="about_us">
+      <div id="about_us" class="about_us">
         <div class="heading">
           <h2>ABOUT US</h2>
           <hr />
@@ -73,12 +84,11 @@
           <div class="about_p">
             <hr />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              Welcome to The Bollywood Cafe, where Bollywood meets delicious
+              food! We serve pizzas, burgers, and beverages that bring joy to
+              your table. Inspired by Indian cinema, our vibrant decor and
+              flavors create a unique dining experience. Join us for good food,
+              Bollywood vibes, and unforgettable memories.
             </p>
           </div>
           <div class="about_image">
@@ -87,7 +97,7 @@
         </div>
       </div>
 
-      <div class="menu">
+      <div id="menu" class="menu">
         <div class="heading">
           <h2>MENU</h2>
           <hr />
@@ -104,62 +114,74 @@
 
         <div class="menu_cards">
           <div class="dish_card">
-            <img src="./Assets/section/dishes/bread.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/Garlic Bread.jpg" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Garlic Bread</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Our garlic bread is freshly baked, topped with flavorful garlic
+                butter, and perfectly crisp.
               </p>
             </div>
           </div>
           <div class="dish_card">
-            <img src="./Assets/section/dishes/bread2.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/Burger.jpg" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Burger</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Our burgers are crafted to perfection, layered with fresh
+                ingredients and bursting with flavor.
               </p>
             </div>
           </div>
           <div class="dish_card">
-            <img src="./Assets/section/dishes/pizza5.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/Pizza.webp" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Pizza</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Freshly baked pizza with a crispy crust, topped with rich,
+                savory sauce and melting cheese – simply irresistible!
               </p>
             </div>
           </div>
           <div class="dish_card">
-            <img src="./Assets/section/dishes/shake1.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/Chilli Potato.jpg" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Chilli Potato</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Spicy, crispy Chilli Potato tossed with tangy sauce and vibrant
+                peppers, creating a mouthwatering snack experience!
               </p>
             </div>
           </div>
           <div class="dish_card">
-            <img src="./Assets/section/dishes/Untitled.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/Coffee.webp" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Coffee</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Bold, aromatic coffee brewed to perfection, offering a rich,
+                smooth flavor with every sip. A perfect pick-me-up!
               </p>
             </div>
           </div>
           <div class="dish_card">
-            <img src="./Assets/section/dishes/pizza2.png" />
+            <div class="img_box">
+              <img src="./Assets/section/dishes/MilkShake.avif" />
+            </div>
             <div class="card_text">
-              <h3>LOREM IPSUM</h3>
+              <h3>Milk Shake</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ac placerat dui.
+                Indulge in a creamy milkshake, blended with rich ice cream and
+                topped with whipped cream for a sweet treat!
               </p>
             </div>
           </div>
@@ -249,7 +271,7 @@
 
       <div class="gallery_section">
         <div class="heading">
-          <h2>ABOUT US</h2>
+          <h2>Gallary</h2>
           <hr />
         </div>
         <div class="img_grid">
@@ -274,7 +296,7 @@
         </div>
       </div>
 
-      <div class="find_us">
+      <div id="find_us" class="find_us">
         <div class="heading">
           <h2>FIND US</h2>
           <hr />
